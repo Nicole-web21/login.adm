@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Movimentação - Pharma Lab</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="movimenta.css">
+  <link rel="stylesheet" href="relatorio.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <div class="nav-top">
+        <div class="search-container">
+          <form class="search-bar">
+            <input type="text" placeholder="Pesquisar...">
+          </form>
+          <button id="search-toggle">🔍</button>
+        </div>
+
+        <div class="icons">
+          <a href="#">⚙️</a>
+          <a href="#">Usuário</a>
+        </div>
+      </div>
+
+      <div class="nav-bottom">
+        <img src="logo3.png" alt="Logo" class="logo">
+        <div class="nav-links">
+          <a href="#">Produtos</a>
+          <a href="#">Cadastro</a>
+          <a href="#">Estoque</a>
+          <a href="movimenta.html">Movimentação</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- TABELA -->
+  <table>
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th>Entrada ou Saída</th>
+        <th>Data</th>
+        <th>Quantidade</th>
+        <th>Usuário</th>
+      </tr>
+    </thead>
+    <tbody id="tabela-movimentacao">
+      <!-- Nenhum item ainda -->
+    </tbody>
+  </table>
+
+  <p class="mensagem">Nenhuma movimentação registrada até o momento.</p>
+  <script src="movimentacao.js"></script>
+
+  <!-- BOTÃO RELATÓRIO -->
+  <div class="botao-container">
+    <button class="btn-relatorio" onclick="abrirModal()">Relatórios</button>
+  </div>
+
+  <!-- MODAL RELATÓRIO -->
+  <div class="modal-overlay" id="modalRelatorio">
+    <div class="modal-content">
+      <h1>Relatórios</h1>
+
+      <form>
+        <label><input type="radio" name="escolha" value="opcao1"> Saídos no mês</label>
+        <label><input type="radio" name="escolha" value="opcao2"> Total em estoque</label>
+        <label><input type="radio" name="escolha" value="opcao3"> Itens com baixo estoque</label>
+      </form>
+
+      <button class="btn-relatorio" onclick="exportarPDF()">Exportar para PDF</button>
+      <button class="btn-relatorio" onclick="fecharModal()">Voltar</button>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script>
+    function abrirModal() {
+      document.getElementById("modalRelatorio").style.display = "flex";
+    }
+
+    function fecharModal() {
+      document.getElementById("modalRelatorio").style.display = "none";
+    }
+
+    function exportarPDF() {
+      alert("Função de exportar PDF ainda será implementada.");
+    }
+  </script>
+</body>
+</html>

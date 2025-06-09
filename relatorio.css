@@ -1,0 +1,52 @@
+.modal-content {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 50%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-content h1 {
+  color: #2f8fe9;
+  font-size: 35px;
+  margin-bottom: 20px; /* diminui o espaço abaixo do título */
+}
+
+.modal-content form {
+  font-size: 25px;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* espaço entre os campos */
+}
+
+.modal-content label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.modal-content input[type="radio"] {
+  margin-right: 10px;
+}
+
+.btn-relatorio {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  width: 50%;
+  max-width: 300px;
+}
