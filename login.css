@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body, html {
+  height: 100%;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 900px;
+  height: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.login-box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* Lado esquerdo */
+.left-painel {
+  flex: 1;
+  background: linear-gradient(to top, #0056b3, #02386a);
+  color:#f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.welcome-text h2 {
+  font-size: 50px;
+  margin-top: 60px;
+}
+
+.welcome-text h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.logo img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+/* Lado direito */
+.right-painel {
+  flex: 1;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+
+}
+
+.form-container {
+  width: 100%;
+  max-width: 300px;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: #1f0909;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 12px;
+  background-color: #2f8fe9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #02386a;
+}
